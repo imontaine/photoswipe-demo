@@ -141,6 +141,61 @@ body {
   text-transform: uppercase;
 }
 
+/* ─── Repo Links ─── */
+
+.repo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--fg-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-default);
+  white-space: nowrap;
+}
+
+.repo-link:hover {
+  color: var(--fg-primary);
+  background: var(--bg-hover);
+  border-color: var(--fg-tertiary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.repo-link svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.repo-link:hover svg {
+  opacity: 1;
+}
+
+.repo-link--demo {
+  color: var(--brand-primary);
+  border-color: hsla(160 84% 39% / 0.25);
+  background: var(--brand-muted);
+}
+
+.repo-link--demo:hover {
+  color: var(--brand-hover);
+  border-color: var(--brand-primary);
+  background: hsla(160 84% 39% / 0.2);
+}
+
 .options-scroll {
   padding: 16px 24px 24px;
   flex: 1;
